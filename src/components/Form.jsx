@@ -35,7 +35,7 @@ const Form = () => {
       error.password = "Password is required";
     } else if (values.password.length < 4) {
       error.password = "password must have min 4 character";
-    } else if (values.password.length > 4) {
+    } else if (values.password.length > 10) {
       error.password = "password must have max 10 character only..";
     }
     return error;
